@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Service.TutorialEconomics.Grpc;
 using Service.TutorialEconomics.Grpc.Models.State;
 using Service.TutorialEconomics.Mappers;
@@ -22,7 +21,7 @@ namespace Service.TutorialEconomics.Services
 
 		public async ValueTask<FinishStateGrpcResponse> GetFinishStateAsync(GetFinishStateGrpcRequest request)
 		{
-			Guid? userId = request.UserId;
+			string userId = request.UserId;
 			int? unit = request.Unit;
 
 			TaskTypeProgressInfo typeProgressInfo = await _taskProgressService.GetTotalProgressAsync(userId, unit);
