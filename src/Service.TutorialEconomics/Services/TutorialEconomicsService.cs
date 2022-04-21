@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
+using Service.Education.Contracts.State;
 using Service.TutorialEconomics.Grpc;
-using Service.TutorialEconomics.Grpc.Models.State;
 using Service.TutorialEconomics.Mappers;
 using Service.TutorialEconomics.Models;
 using Service.UserReward.Grpc;
